@@ -8,6 +8,13 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using BE;
 
+// שם: דניאל רוטנמר
+// ת.ז: 316240837
+// שותף: רפאל לרמן
+// פלאפון: 0583266859
+// מרצה: יאיר גולדשטיין
+// קורס: מיני פרוייקט במערכות חלונות
+
 namespace DAL
 {
     public class Dal_XML_imp : Idal

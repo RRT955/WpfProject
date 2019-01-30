@@ -46,12 +46,12 @@ namespace PLWPF
         public MainWindow()
         {
             InitializeComponent();
-            if (File.Exists("Tests.xml"))
+            /*if (File.Exists("Tests.xml"))
                 File.Delete("Tests.xml");
             if (File.Exists("Trainees.xml"))
                 File.Delete("Trainees.xml");
             if (File.Exists("Testers.xml"))
-                File.Delete("Testers.xml");
+                File.Delete("Testers.xml");*/
             XDocument config = XDocument.Load("config.xml");
             var testId = from t in config.Element("Configuration").Elements("Identification").Elements("TestId") select t;
             testId.ElementAt(0).Value = "1";
@@ -61,8 +61,8 @@ namespace PLWPF
             traineeId.ElementAt(0).Value = "1";
             config.Save("config.xml");
             bl = (Bl_imp)FactoryBl.GetBl();
-            AddTesters();
-            AddTrainees();
+            //AddTesters();
+            //AddTrainees();
            // AddTest();
             UpdateData();
         }
