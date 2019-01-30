@@ -1,0 +1,85 @@
+﻿<Window x:Class="PLWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="807.608" Width="1275.07">
+    <Grid>
+        <DockPanel Margin="0, 0" DockPanel.Dock="Top" Height="auto" VerticalAlignment="Top">
+            <Menu Margin="0, 0" DockPanel.Dock="Top" FontSize="18">
+                <MenuItem Header="Operations">
+                    <MenuItem x:Name="addTesterItem" Header="Add tester" Click="AddTesterItem_Click" />
+                    <MenuItem x:Name="addTestItem" Header="Add test" Click="AddTestItem_Click" />
+                    <MenuItem x:Name="addTraineeItem" Header="Add trainee" Click="AddTraineeItem_Click" />
+                    <Separator />
+                    <MenuItem x:Name="updateTesterItem" Header="Update selected tester" Click="UpdateTesterItem_Click" />
+                    <MenuItem x:Name="updateTestItem" Header="Update selected test" Click="UpdateTestItem_Click" />
+                    <MenuItem x:Name="updateTraineeItem" Header="Update selected trainee" Click="UpdateTraineeItem_Click" />
+                    <Separator />
+                    <MenuItem x:Name="removeTesterItem" Header="Remove selected tester" Click="RemoveTesterItem_Click" />
+                    <MenuItem x:Name="removeTestItem" Header="Remove selected test" Click="RemoveTestItem_Click" />
+                    <MenuItem x:Name="removeTraineeItem" Header="Remove selected trainee" Click="RemoveTraineeItem_Click" />
+                </MenuItem>
+                <MenuItem Header="Run a query">                    
+                    <MenuItem x:Name="futureTestsItem" Header="All future tests" Click="FutureTestsItem_Click" />
+                </MenuItem>
+                <MenuItem Header="View items">
+                    <MenuItem x:Name="viewTesterMenuItem" Header="View selcted tester" Click="ViewTesterMenuItem_Click" />
+                    <MenuItem x:Name="viewTestMenuItem" Header="View selcted test" Click="ViewTestMenuItem_Click" />
+                    <MenuItem x:Name="viewTraineeMenuItem" Header="View selcted trainee" Click="ViewTraineeMenuItem_Click" />
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+        <Label Content="Testers:" HorizontalAlignment="Left" Margin="68,52,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <DataGrid x:Name="testersDataGrid" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="auto" Margin="68,88,0,0" VerticalAlignment="Top" Width="auto" MaxHeight="150" ItemsSource="{Binding Testers}" FontSize="14" MouseDoubleClick="TestersDataGrid_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tetser Id" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="First name" Binding="{Binding FirstName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Last name" Binding="{Binding LastName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Date of birth" Binding="{Binding DateOfBirth}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Phone number" Binding="{Binding PhoneNumber}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Address" Binding="{Binding Address.AddressAsString}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Years of experience" Binding="{Binding YearsOfExperience}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Maximum weekly tests" Binding="{Binding MaximumPossibleWeeklyTests}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Car type" Binding="{Binding CarType}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Max distance" Binding="{Binding MaxDistanceOfTestLocation}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label Content="Tests:" HorizontalAlignment="Left" Margin="68,261,0,0" VerticalAlignment="Top" FontSize="16" Width="63"/>
+        <DataGrid x:Name="testsDataGrid" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="auto" Margin="68,297,0,0" VerticalAlignment="Top" Width="auto" MaxHeight="150" ItemsSource="{Binding Tests}" FontSize="14" MouseDoubleClick="TestsDataGrid_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Test Id" Binding="{Binding TestId}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Trainee Id" Binding="{Binding TraineeId}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tetser Id" Binding="{Binding TesterId}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Date of test" Binding="{Binding DateOfTest}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Test starting address" Binding="{Binding TestDepartureAddress.AddressAsString}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Finished" Binding="{Binding Finished}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Passed" Binding="{Binding Passed}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Trainees:" HorizontalAlignment="Left" Margin="68,470,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <DataGrid x:Name="traineesDataGrid" HorizontalAlignment="Left" Margin="68,506,0,0" VerticalAlignment="Top" Width="1052" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding Trainees}" FontSize="14" Height="auto" MouseDoubleClick="TraineesDataGrid_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Trainee Id" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Date of birth" Binding="{Binding DateOfBirth}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Address" Binding="{Binding Address.AddressAsString}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Car type" Binding="{Binding CarType}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Gearbox type" Binding="{Binding GearboxType}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Driving school name" Binding="{Binding DrivingSchoolName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Number of driving lessons" Binding="{Binding NumberOfDrivingLessons}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Age" Binding="{Binding Age}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Teacher name" Binding="{Binding TeacherName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}"></DataGridTextColumn>
+                <DataGridTextColumn Header="PhoneNumber" Binding="{Binding PhoneNumber}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Click on a tester or trainee to view them, Click on a test to update it (just when finished). or select operation from the menu." HorizontalAlignment="Left" Margin="135,30,0,0" VerticalAlignment="Top" Width="883" FontSize="16"/>
+    </Grid>
+</Window>

@@ -1,0 +1,75 @@
+﻿<Window x:Class="PLWPF.TraineeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        xmlns:BE="clr-namespace:BE;assembly=BE"
+        mc:Ignorable="d"
+        Title="TraineeWindow" Height="460.656" Width="795.2">
+    <Grid>
+        <Grid x:Name="traineeDetailsPanel" Margin="47,36,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="685" Height="344">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="265"/>
+                <RowDefinition Height="78"/>
+            </Grid.RowDefinitions>
+            <Label Content="Enter tester details here:" Grid.Row="0" FontSize="16"/>
+            <Grid x:Name="innerGrid" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="81"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="61"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Content="First name:" HorizontalAlignment="Left" Margin="0,2,0,0" Width="91" FontSize="16"/>
+                <TextBox Grid.Row="0" x:Name="firstNameTB" HorizontalAlignment="Left" Margin="96,2,0,4" TextWrapping="Wrap" FontSize="16" Width="244" Height="28" BorderBrush="#FF303030"/>
+                <Label Grid.Row="1" Content="Last name:" HorizontalAlignment="Left" Margin="0,2,0,0" Width="91" FontSize="16"/>
+                <TextBox Grid.Row="1" x:Name="lastNameTB" HorizontalAlignment="Left" Margin="96,2,0,4" TextWrapping="Wrap" FontSize="16" Width="244" Height="28" BorderBrush="#FF303030"/>
+                <Label Grid.Row="2" Content="Date of birth:" HorizontalAlignment="Left" Margin="0,2,0,36" Width="112" FontSize="16" BorderThickness="0"/>
+                <DatePicker Grid.Row="2" x:Name="dateOfBirthTB" HorizontalAlignment="Left" Margin="117,5,0,48" FontSize="16" Width="225" Height="28" BorderBrush="#FF303030">
+                    <DatePicker.Resources>
+                        <Style TargetType="DatePickerTextBox">
+                            <Setter Property="IsReadOnly" Value="True"/>
+                        </Style>
+                    </DatePicker.Resources>
+                </DatePicker>
+                <Label Grid.Row="2" Content="Gender:" HorizontalAlignment="Left" Margin="0,42,0,11" Width="91" FontSize="16"/>
+                <ComboBox Grid.Row="2" x:Name="genderCB" HorizontalAlignment="Left" Margin="96,40,0,4" FontSize="16" Width="244" Height="28" BorderBrush="#FF303030">
+                    <BE:Gender>Male</BE:Gender>
+                    <BE:Gender>Female</BE:Gender>
+                </ComboBox>
+                <Label Grid.Row="3" Content="Phone number:" HorizontalAlignment="Left" Margin="0,2,0,0" Width="117" FontSize="16"/>
+                <TextBox Grid.Row="3" x:Name="phoneTB" HorizontalAlignment="Left" Margin="126,2,0,4" TextWrapping="Wrap" FontSize="16" Width="214" Height="28" BorderBrush="#FF303030"/>
+                <Label Grid.Row="4" Content="Gearbox type:" HorizontalAlignment="Left" Margin="0,10" Width="117" FontSize="16"/>
+                <ComboBox Grid.Row="4" x:Name="gearboxCB" HorizontalAlignment="Left" Margin="117,10,0,23" FontSize="16" Width="223" Height="28" BorderBrush="#FF303030">
+                    <BE:GearboxType>Manual</BE:GearboxType>
+                    <BE:GearboxType>Auto</BE:GearboxType>
+                </ComboBox>
+                <Label Grid.Row="0" Grid.Column="1" Content="Address:" HorizontalAlignment="Left" Margin="20,2,0,0" Width="72" FontSize="16"/>
+                <TextBox Grid.Row="0" Grid.Column="1" x:Name="AddressTB" HorizontalAlignment="Left" Margin="96,2,0,4" TextWrapping="Wrap" FontSize="16" Width="244" Height="28" BorderBrush="#FF303030" Text="Country, City, Street, Number"/>
+                <Label Grid.Row="1" Grid.Column="1" Content="Number of driving lessons:" HorizontalAlignment="Left" Margin="20,2,0,0" Width="200" FontSize="16"/>
+                <local:NumericUpDown x:Name="numberOfDrivingLessons" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="220,2,0,0" VerticalAlignment="Top" Width="113"/>
+                <Label Grid.Row="2" Grid.Column="1" Content="Car type:" HorizontalAlignment="Left" Margin="20,2,0,45" Width="72" FontSize="16"/>
+                <ComboBox Grid.Row="2" Grid.Column="1" x:Name="carTypeCB" HorizontalAlignment="Left" Margin="100,5,0,48" FontSize="16" Width="240" Height="28" BorderBrush="#FF303030">
+                    <BE:CarType>PrivateCar</BE:CarType>
+                    <BE:CarType>TwoWheeledCar</BE:CarType>
+                    <BE:CarType>MediumTruck</BE:CarType>
+                    <BE:CarType>HeavyTruck</BE:CarType>
+                </ComboBox>
+                <Label Grid.Row="2" Content="School name:" Grid.Column="1" HorizontalAlignment="Left" Margin="20,44,0,5" Width="109" FontSize="16"/>
+                <TextBox Grid.Row="2" x:Name="schoolName" Grid.Column="1" HorizontalAlignment="Left" Margin="134,47,0,6" TextWrapping="Wrap" FontSize="16" Width="206" Height="28" BorderBrush="#FF303030"/>
+                <Label Grid.Row="3" Grid.Column="1" Content="Teacher name:" HorizontalAlignment="Left" Margin="20,2,0,7" Width="118" FontSize="16"/>
+                <TextBox Grid.Row="3" Grid.Column="1" x:Name="teacherName" HorizontalAlignment="Left" Margin="143,5,0,7" TextWrapping="Wrap" FontSize="16" Width="197" Height="28" BorderBrush="#FF303030"/>
+            </Grid>
+            <Label x:Name="errorLabel" Content="Label" HorizontalAlignment="Left" Margin="0,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="508" FontSize="16" Visibility="Visible" Height="31"/>
+            <Button x:Name="addOrUpdateTraineeButton" Content="Button" HorizontalAlignment="Left" Margin="544,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="131" Height="26" FontSize="16" Click="AddOrUpdateTraineeButton_Click"/>
+        </Grid>
+        <Label x:Name="waitingLabel" Content="Choose an operation from the main window." HorizontalAlignment="Left" Margin="265,100,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <General>
+    <MinimumNumberOfLessons>20</MinimumNumberOfLessons>
+    <MinimumTraineeAge>18</MinimumTraineeAge>
+    <MinimumTesterAge>40</MinimumTesterAge>
+    <MinimumIntervalOfDaysBetween2Tests>7</MinimumIntervalOfDaysBetween2Tests>
+  </General>
+  <Identification>
+    <TestId>1</TestId>
+    <TesterId>3</TesterId>
+    <TraineeId>3</TraineeId>
+  </Identification>
+</Configuration>

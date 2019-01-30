@@ -1,0 +1,9 @@
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DS\bin\Debug\DS.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DS\bin\Debug\DS.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DS\bin\Debug\BE.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DS\bin\Debug\BE.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DS\obj\Debug\DS.csprojAssemblyReference.cache
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DS\obj\Debug\DS.csproj.CopyComplete
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DS\obj\Debug\DS.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DS\obj\Debug\DS.pdb

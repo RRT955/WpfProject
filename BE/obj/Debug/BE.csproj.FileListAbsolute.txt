@@ -1,0 +1,6 @@
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BE\bin\Debug\BE.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BE\bin\Debug\BE.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BE\obj\Debug\BE.csprojAssemblyReference.cache
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BE\obj\Debug\BE.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BE\obj\Debug\BE.pdb

@@ -1,0 +1,11 @@
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\bin\Debug\DAL.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\bin\Debug\DAL.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\bin\Debug\BE.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\bin\Debug\DS.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\bin\Debug\BE.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\bin\Debug\DS.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\obj\Debug\DAL.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\DAL\obj\Debug\DAL.pdb

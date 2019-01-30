@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: PLWPF, Configuration: Debug Any CPU ------
+1>  PLWPF -> F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\PLWPF\bin\Debug\PLWPF.exe
+========== Build: 1 succeeded, 0 failed, 4 up-to-date, 0 skipped ==========

@@ -1,0 +1,13 @@
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\bin\Debug\BL.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\bin\Debug\BL.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\obj\Debug\BL.csprojAssemblyReference.cache
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\obj\Debug\BL.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\obj\Debug\BL.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\bin\Debug\BE.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\bin\Debug\DAL.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\bin\Debug\DS.dll
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\bin\Debug\BE.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\bin\Debug\DAL.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\bin\Debug\DS.pdb
+F:\Studies\B\C#\Project03_0837_7488_dotNet_5779\BL\obj\Debug\BL.csproj.CopyComplete
